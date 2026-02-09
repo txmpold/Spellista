@@ -1,0 +1,45 @@
+:root {
+    --primary-bg-color: #3E3B39;
+    --font-color: #FBF1C6;
+    --detail-color: #689C6A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: jetbrains mono;
+  justify-content: flex-start;
+  background-color: var(--primary-bg-color);
+}
+
+#playlists {
+    padding-top: 1rem;
+    text-align: center;
+    border-radius: 25px;
+    height: 100%;
+    width: 20rem;
+    border: 2px solid var(--detail-color);
+    margin-right: 2rem;
+}
+
+#playlist-title {
+    color: var(--font-color);
+}
+
+#playlist-view{
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--detail-color);
+    border-radius: 25px;
+}
+
+
+
