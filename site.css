@@ -43,14 +43,15 @@ body {
 }
 
 #playlist-content {
+    ;
     height: 100%;
     width: 100%;
     border: 2px solid var(--detail-color);
     border-radius: 10px;
     display: flex;
-    padding: 0rem 1rem;
+    padding: 1rem 1rem;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -97,7 +98,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.1rem 0rem;
+    padding: 0.2rem 0rem;
     color: var(--font-color);
 }
 
@@ -124,7 +125,7 @@ body {
     color: var(--secondary-detail-color);
 }
 
-#filter {
+#filter-container {
     color: var(--font-color);
     display: flex;
     flex-direction: column;
