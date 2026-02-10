@@ -3,7 +3,8 @@
     --light-bg-color: #918273;
     --font-color: #FBF1C6;
     --detail-color: #689C6A;
-
+    --secondary-detail-color: #fabc33;
+    --other-detail-color: #b06285;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    font-family: jetbrains mono;
+    font-family: jetbrains mono, monospace;
     justify-content: flex-start;
     background-color: var(--primary-bg-color);
 }
@@ -106,9 +107,11 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: left;
+    color: var(--secondary-detail-color);
 }
 
 .song-info {
     font-size: 0.9rem;
     color: var(--detail-color);
+    color: var(--other-detail-color);
 }
