@@ -14,7 +14,7 @@
 }
 
 body {
-    padding: 2rem;
+    padding: 1rem;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -33,7 +33,6 @@ body {
     height: 100%;
     width: 20rem;
     border: 2px solid var(--detail-color);
-    margin-right: 2rem;
 }
 
 #playlist-header {
@@ -103,8 +102,8 @@ body {
 }
 
 .song img {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border-radius: 5px;
     margin-right: 2rem;
 }
@@ -122,7 +121,27 @@ body {
     min-width: 10%;
     text-align: left;
     color: var(--detail-color);
-    color: var(--other-detail-color);
+    color: var(--secondary-detail-color);
+}
+
+#filter {
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    padding: 0rem 1rem;
+}
+
+#genre-filter {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--other-detail-color);
+    color: var(--font-color);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -138,6 +157,7 @@ body {
     .song-info {
         font-size: 0.7rem;
     }
+
     .song img {
         width: 50px;
         height: 50px;
