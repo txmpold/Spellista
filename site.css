@@ -1,7 +1,9 @@
 :root {
     --primary-bg-color: #3E3B39;
+    --light-bg-color: #918273;
     --font-color: #FBF1C6;
     --detail-color: #689C6A;
+
 }
 
 * {
@@ -20,23 +22,93 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-#playlists {
+#playlist-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 1rem;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 10px;
     height: 100%;
     width: 20rem;
     border: 2px solid var(--detail-color);
     margin-right: 2rem;
 }
 
-#playlist-title {
+#playlist-header {
     color: var(--font-color);
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-#playlist-view {
+#playlist-content {
     height: 100%;
     width: 100%;
     border: 2px solid var(--detail-color);
-    border-radius: 25px;
+    border-radius: 10px;
+    padding: 2rem 5rem;
+}
+
+#create-playlist-btn {
+    width: 80%;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--light-bg-color);
+    color: var(--font-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#create-playlist-btn:hover {
+    background-color: var(--detail-color);
+}
+
+#playlists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.playlist {
+    background-color: var(--light-bg-color);
+    width: 100%;
+    color: var(--font-color);
+    padding: 0.5rem 1rem;
+    border: var(--detail-color) 2px solid;
+    border-radius: 10px;
+}
+
+.playlist:hover {
+    background-color: var(--detail-color);
+    cursor: pointer;
+}
+
+.song {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    color: var(--font-color);
+}
+
+.song img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.song-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.song-info {
+    font-size: 0.9rem;
+    color: var(--detail-color);
 }
