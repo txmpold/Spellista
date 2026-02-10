@@ -1,5 +1,6 @@
 const initApp = () => {
   createNewPlaylist();
+  showPlaylist();
 };
 
 const playlist = [
@@ -67,12 +68,10 @@ const createNewPlaylist = () => {
   playlist.textContent = "Super awesome playlist";
   playlist.classList.add("playlist");
   playlists.appendChild(playlist);
-  playlist.addEventListener("click", showPlaylist);
 };
 
 const showPlaylist = () => {
   const playlistContainer = document.getElementById("playlist-content");
-  playlistContainer.innerHTML = "";
   for (const song of playlist) {
     const songElement = document.createElement("div");
     songElement.classList.add("song", song.genre.toLowerCase());
