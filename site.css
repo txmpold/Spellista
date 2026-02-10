@@ -12,12 +12,12 @@
 
 body {
     padding: 2rem;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  font-family: jetbrains mono;
-  justify-content: flex-start;
-  background-color: var(--primary-bg-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: jetbrains mono;
+    justify-content: flex-start;
+    background-color: var(--primary-bg-color);
 }
 
 #playlists {
@@ -34,12 +34,9 @@ body {
     color: var(--font-color);
 }
 
-#playlist-view{
+#playlist-view {
     height: 100%;
     width: 100%;
     border: 2px solid var(--detail-color);
     border-radius: 25px;
 }
-
-
-
