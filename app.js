@@ -9,7 +9,7 @@ const playlist = [
     title: "Love T.K.O",
     artist: "Teddy Pandergrass",
     genre: "Soul",
-    cover: "img/Teddy.jpg",
+    cover: "img/teddy.jpg",
   },
   {
     title: "Varmare Vindar",
@@ -27,7 +27,7 @@ const playlist = [
     title: "Georgia",
     artist: "Kevin Abstract",
     genre: "HipHop",
-    cover: "img/Kevin.jpg",
+    cover: "img/kevin.jpg",
   },
   {
     title: "Relationships",
@@ -39,25 +39,25 @@ const playlist = [
     title: "Feel Like Makin' Love",
     artist: "Roberta Flack",
     genre: "Soul",
-    cover: "img/Roberta.jpg",
+    cover: "img/roberta.jpg",
   },
   {
     title: "Rain",
     artist: "Mac Miller",
     genre: "HipHop",
-    cover: "img/Mac.jpg",
+    cover: "img/mac.jpg",
   },
   {
     title: "In the Mood",
     artist: "Tyrone Davis",
     genre: "Soul",
-    cover: "img/Tyrone.jpg",
+    cover: "img/tyrone.jpg",
   },
   {
     title: "311",
     artist: "Jordan Ward",
     genre: "HipHop",
-    cover: "img/Jordan.jpg",
+    cover: "img/jordan.jpg",
   },
 ];
 
